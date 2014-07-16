@@ -6,6 +6,23 @@
     <title></title>
     <link rel=StyleSheet href="desktop-dark.css" type="text/css" media=screen>
     <link rel=StyleSheet href="rachelni-styles.css" type="text/css" media=screen>
+
+    <script>
+        function setStyleSheet(path)
+        {
+          // Remove existing stylesheet
+          var stylesheet = document.querySelector('#dynamic-stylesheet');
+          var head = document.querySelector('head');
+          stylesheet && head.removeChild(stylesheet);
+
+          // Add new stylesheet
+          stylesheet = document.createElement('link');
+          stylesheet.rel = 'stylesheet';
+          stylesheet.href = path;
+          stylesheet.id = 'dynamic-stylesheet';
+          head.appendChild(stylesheet);
+        }
+    </script>
 </head>
 <body>
     <div>
