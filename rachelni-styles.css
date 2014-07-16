@@ -17,7 +17,7 @@ table {
 }
 table td {
     border: none;
-}  
+}
 table tr {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -40,4 +40,14 @@ ul#stylesheet-nav > li {
 
 .break-float {
     clear: left;
+}
+
+.selected:before
+{
+    content: "•";
+}
+
+.selected:after
+{
+    content: "•";
 }
