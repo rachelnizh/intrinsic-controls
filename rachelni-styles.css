@@ -42,12 +42,13 @@ ul#stylesheet-nav > li {
     clear: left;
 }
 
-.selected:before
+.selected
 {
-    content: "•";
+    font-weight: bold;
+/*    text-decoration: overline;*/
 }
 
-.selected:after
+/*.selected:after
 {
     content: "•";
-}
+}*/
