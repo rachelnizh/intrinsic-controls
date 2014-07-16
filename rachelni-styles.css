@@ -1,34 +1,41 @@
 /*Rachel's styles - NOT WINJS*/
 body {
-            overflow-y: auto;
-        }
+    overflow-y: auto;
+}
 
-                body div {
-                    margin: 50px;
-                    -moz-user-select: text;
-                    -webkit-touch-callout: text;
-                    -webkit-user-select: text;
-                    -khtml-user-select: text;
-                    -ms-user-select: text;
-                }
-                table {
-                    border: none;
-                    border-collase: collapse;
-                }
-                table td {
-                    border: none;
-                }  
-                table tr {
-                    border-top: 1px solid black;
-                    border-bottom: 1px solid black;
-                }
-                 
-                thead * {
-                    font-weight:bold;
-                }
+body div {
+    margin: 50px;
+    -moz-user-select: text;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -ms-user-select: text;
+}
+table {
+    border: none;
+    border-collase: collapse;
+}
+table td {
+    border: none;
+}  
+table tr {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
-#stylesheet-nav ul li {
+thead * {
+    font-weight:bold;
+}
+
+ul#stylesheet-nav {
+    padding: 0;
+}
+
+ul#stylesheet-nav > li {
     float: left;
+    margin: 10px 10px 10px 0px;
+    list-style-type: none;
+    font-size: 30px;
 }
 
 .break-float {
