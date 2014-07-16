@@ -1,0 +1,29 @@
+/*Rachel's styles - NOT WINJS*/
+        body {
+            overflow-y: auto;
+        }
+
+                body div {
+                    margin: 50px;
+                    -moz-user-select: text;
+                    -webkit-touch-callout: text;
+                    -webkit-user-select: text;
+                    -khtml-user-select: text;
+                    -ms-user-select: text;
+                }
+                table {
+                    border: none;
+                    border-collase: collapse;
+                }
+                table td {
+                    border: none;
+                }  
+                table tr {
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                }
+                 
+                thead * {
+                    font-weight:bold;
+                }
+
