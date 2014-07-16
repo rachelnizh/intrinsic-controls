@@ -38,14 +38,16 @@ ul#stylesheet-nav > li {
     font-size: 30px;
 }
 
+ul#stylesheet-nav > li a {    
+    text-decoration: none;
+}
+
 .break-float {
     clear: left;
 }
 
-.selected
-{
-    font-weight: bold;
-/*    text-decoration: overline;*/
+ul#stylesheet-nav > li a.selected {
+    text-decoration: overline;
 }
 
 /*.selected:after
