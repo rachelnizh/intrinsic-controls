@@ -4,34 +4,34 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel=StyleSheet href="desktop-dark.css" type="text/css" media=screen>
-    <link rel=StyleSheet href="rachelni-styles.css" type="text/css" media=screen>
+    <link rel="stylesheet" href="rachelni-styles.css" type="text/css">
 
     <script>
         function setStyleSheet(path)
         {
           // Remove existing stylesheet
-          var stylesheet = document.querySelector('#dynamic-stylesheet');
-          var head = document.querySelector('head');
+          var stylesheet = document.querySelector("#winjs-stylesheet");
+          var head = document.querySelector("head");
           stylesheet && head.removeChild(stylesheet);
 
           // Add new stylesheet
-          stylesheet = document.createElement('link');
-          stylesheet.rel = 'stylesheet';
+          stylesheet = document.createElement("link");
+          stylesheet.rel = "stylesheet";
           stylesheet.href = path;
-          stylesheet.id = 'dynamic-stylesheet';
+          stylesheet.id = "winjs-stylesheet";
           head.appendChild(stylesheet);
         }
+        setStyleSheet("desktop-dark.css");
     </script>
 </head>
 <body>
     <div>
         <ul id="stylesheet-nav">
             <li>Choose a stylesheet:</li>
-            <li><a href="#">Phone light</a> |</li>
-            <li><a href="#">Phone dark</a> |</li>
-            <li><a href="#">Desktop light</a> |</li>
-            <li><a href="#">Desktop dark</a></li>
+            <li><a href="#" onclick="setStyleSheet('phone-light.css');">Phone light</a> |</li>
+            <li><a href="#" onclick="setStyleSheet('phone-dark.css');">Phone dark</a> |</li>
+            <li><a href="#" onclick="setStyleSheet('desktop-light.css');">Desktop light</a> |</li>
+            <li><a href="#" onclick="setStyleSheet('desktop-dark.css');">Desktop dark</a></li>
         </ul>
         <h2 class="break-float">Basic controls</h2>
         <p><a href="https://github.com/winjs/winjs/issues/162">Github issue 162</a></p>
