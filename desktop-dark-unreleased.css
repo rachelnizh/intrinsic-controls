@@ -1,4 +1,4 @@
-/* Copyright (c) Microsoft Open Technologies, Inc.  All Rights Reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information. */
+﻿/* Copyright (c) Microsoft Open Technologies, Inc.  All Rights Reserved. Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information. */
 @keyframes WinJS-node-inserted {
   from {
     outline-color: #000;
@@ -466,22 +466,6 @@
   font-weight: 700;
   src: local("Segoe UI Bold Italic");
 }
-body,
-.win-type-xx-large,
-.win-type-x-large,
-.win-type-large,
-.win-type-medium,
-.win-type-small,
-.win-type-x-small,
-.win-type-xx-small,
-input,
-textarea,
-.win-textarea,
-button,
-select,
-option {
-  font-family: "Segoe", "Helvetica", "Arial", "sans-serif", "Segoe UI Symbol", "Symbols";
-}
 @font-face {
   font-family: "Microsoft Yahei UI";
   font-weight: 200;
@@ -718,6 +702,22 @@ textarea,
 select,
 option {
   letter-spacing: 0.02em;
+}
+body,
+.win-type-xx-large,
+.win-type-x-large,
+.win-type-large,
+.win-type-medium,
+.win-type-small,
+.win-type-x-small,
+.win-type-xx-small,
+input,
+textarea,
+.win-textarea,
+button,
+select,
+option {
+  font-family: "Segoe", "sans-serif", "Segoe UI Symbol", "Symbols";
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -1807,11 +1807,15 @@ button.win-navigation-backbutton:enabled:hover:active {
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
   display: inline-flex;
+  -ms-flex-pack: self;
+  -webkit-justify-content: self;
+  justify-content: self;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
   height: auto;
   width: auto;
   white-space: normal;
-  align-items: stretch;
-  justify-content: center;
   outline: 0;
 }
 .win-rating .win-star {
@@ -1867,6 +1871,8 @@ button.win-navigation-backbutton:enabled:hover:active {
   }
 }
 .win-datepicker {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
   display: inline-flex;
   height: auto;
   width: auto;
@@ -1895,6 +1901,8 @@ button.win-navigation-backbutton:enabled:hover:active {
   margin-left: 20px;
 }
 .win-timepicker {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
   display: inline-flex;
   height: auto;
   width: auto;
@@ -3912,10 +3920,11 @@ Settings flyout is light in both themes unless the app explicitly overrides it.
 .win-searchbox {
   white-space: normal;
   position: relative;
-  width: 265px;
+  width: 237px;
   height: 28px;
   border-style: solid;
   border-width: 2px;
+  padding-right: 28px;
 }
 .win-searchbox-flyout {
   position: absolute;
@@ -3937,10 +3946,11 @@ Settings flyout is light in both themes unless the app explicitly overrides it.
   border-style: none;
   margin: 0px;
   padding-right: 28px;
-  width: calc(100% - 28px);
+  width: 100%;
   font-size: 11pt;
   -ms-ime-align: after;
   line-height: 20px;
+  box-sizing: border-box;
 }
 .win-searchbox input:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
   padding-right: 0;
@@ -3950,6 +3960,9 @@ Settings flyout is light in both themes unless the app explicitly overrides it.
 Hide clear button in search box control.
 */
 .win-searchbox input[type=search]::-ms-clear {
+  display: none;
+}
+.win-searchbox input[type=search]::-webkit-search-cancel-button {
   display: none;
 }
 .win-searchbox-button {
@@ -3971,9 +3984,10 @@ Hide clear button in search box control.
   content: "\E094";
 }
 .win-searchbox-suggestion-result {
-  padding: 0 18px;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  padding: 0 18px;
   height: 60px;
   font-family: "Segoe UI";
   font-size: 11pt;
