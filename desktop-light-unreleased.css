@@ -6447,3 +6447,10 @@ button.win-command:disabled:active .win-label {
   background-color: rgba(191, 191, 191, 0.749);
   color: black;
 }
+
+
+/* Rachel's select tag test */
+select {
+  border-radius: 0;
+  background-color: purple;
+}
