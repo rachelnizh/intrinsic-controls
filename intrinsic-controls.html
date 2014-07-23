@@ -17,7 +17,7 @@
           stylesheet.rel = "stylesheet";
           stylesheet.href = id + ".css";
           stylesheet.id = "winjs-stylesheet";
-          head.appendChild(stylesheet);
+          head.insertBefore(stylesheet, document.querySelector('#rachel'));
 
           // Toggle classes for selected
           var buttons = document.querySelectorAll("#stylesheet-nav a")
@@ -28,7 +28,7 @@
 
         window.onload = function() {setStyleSheet("phone-light");};
     </script>
-    <link rel="stylesheet" href="rachelni-styles.css" type="text/css">
+<link id ="rachelni" rel="stylesheet" href="rachelni-styles.css" type="text/css">
 </head>
 <body>
     <div>

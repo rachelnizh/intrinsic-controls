@@ -6449,14 +6449,3 @@ button.win-command:disabled:active .win-label {
 }
 
 
-/* Rachel's select tag test */
-select {
-  border-radius: 0;
-  background-color: #4f1acb;
-  background-image: -moz-linear-gradient(top, #4f1acb, #4f1acb);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4f1acb), to(#4f1acb));
-  background-image: -webkit-linear-gradient(top, #4f1acb, #4f1acb);
-  background-image: -o-linear-gradient(top, #4f1acb, #4f1acb);
-  background-image: linear-gradient(to bottom, #4f1acb, #4f1acb);
-  background-repeat: repeat-x;
-}
