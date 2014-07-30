@@ -56,8 +56,10 @@ ul#stylesheet-nav > li a.selected {
     content: "•";
 }*/
 
+/*
 @media all and (max-width: 1400px) and (min-width: 200px) {
     ul#stylesheet-nav > li {
         float: none;
     }
 }
+*/
