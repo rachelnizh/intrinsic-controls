@@ -67,4 +67,5 @@ ul#stylesheet-nav > li a.selected {
 select {     
     background-color: rgba(85, 55, 102, 1);
     background: linear-gradient(to right,  #553766 0%,#553766 100%); /* W3C iOS gradient hack */
+    border-radius: 0px;
 }
