@@ -5734,11 +5734,6 @@ input[type=reset]:disabled:hover:active {
   border-color: rgba(0, 0, 0, 0.08);
   color: rgba(0, 0, 0, 0.4);
 }
-button:focus,
-input[type=button]:focus,
-input[type=reset]:focus {
-  outline: 1px dotted #000000;
-}
 button[type=submit],
 input[type=submit] {
   background-color: #4617b4;
@@ -5763,10 +5758,6 @@ input[type=submit]:disabled:hover:active {
   background-color: rgba(202, 202, 202, 0.4);
   border-color: rgba(0, 0, 0, 0.08);
   color: rgba(0, 0, 0, 0.4);
-}
-button[type=submit]:focus,
-input[type=submit]:focus {
-  outline: 1px dotted #000000;
 }
 button:-ms-keyboard-active,
 button[type=submit]:-ms-keyboard-active,
@@ -6326,19 +6317,19 @@ button.win-command:disabled:active .win-label {
   background-color: transparent;
   color: #000000;
 }
-.win-menu button:focus,
-.win-menu button:focus,
-.win-menu button:active,
-.win-menu button:active {
+.win-menu.win-menu button.win-command:enabled:focus,
+.win-menu.win-menu button.win-command:enabled:focus,
+.win-menu.win-menu button.win-command:enabled:active,
+.win-menu.win-menu button.win-command:enabled:active {
   background-color: #dedede;
 }
-.win-menu button:enabled:hover:active,
-.win-menu button:enabled:hover:active {
+.win-menu.win-menu button.win-command:enabled:hover:active,
+.win-menu.win-menu button.win-command:enabled:hover:active {
   color: #ffffff;
   background-color: #000000;
 }
-.win-menu button:-ms-keyboard-active,
-.win-menu button:-ms-keyboard-active {
+.win-menu.win-menu button.win-command:enabled:-ms-keyboard-active,
+.win-menu.win-menu button.win-command:enabled:-ms-keyboard-active {
   color: #ffffff;
   background-color: #000000;
 }
@@ -6872,11 +6863,6 @@ html.win-hoverable .win-pivot .win-pivot-navbutton:hover {
   border-color: rgba(255, 255, 255, 0.4);
   color: rgba(255, 255, 255, 0.4);
 }
-.win-ui-dark button:focus,
-.win-ui-dark input[type=button]:focus,
-.win-ui-dark input[type=reset]:focus {
-  outline: 1px dotted #ffffff;
-}
 .win-ui-dark button[type=submit],
 .win-ui-dark input[type=submit] {
   background-color: #4617b4;
@@ -6901,10 +6887,6 @@ html.win-hoverable .win-pivot .win-pivot-navbutton:hover {
   background-color: transparent;
   border-color: rgba(255, 255, 255, 0.4);
   color: rgba(255, 255, 255, 0.4);
-}
-.win-ui-dark button[type=submit]:focus,
-.win-ui-dark input[type=submit]:focus {
-  outline: 1px dotted #ffffff;
 }
 .win-ui-dark button:-ms-keyboard-active,
 .win-ui-dark button[type=submit]:-ms-keyboard-active,
